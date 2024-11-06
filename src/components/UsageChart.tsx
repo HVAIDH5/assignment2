@@ -81,9 +81,11 @@ export default function UsageChart() {
   };
   
   return (
-    <div className="w-full h-80 bg-black/90 rounded-lg p-4 text-white">
-      <h2 className="text-lg font-semibold mb-4">Last 7 Days: Registrations vs Referrals</h2>
-      <Line data={data} options={options} />
+    <div className="w-full h-52 sm:h-60 md:h-64 lg:h-72 bg-black/90 rounded-lg p-3 sm:p-4 md:p-5 lg:p-6 text-white">
+      <h2 className="text-sm sm:text-base md:text-lg font-semibold mb-2 sm:mb-3">Last 7 Days: Registrations vs Referrals</h2>
+      <div className="w-full h-full">
+        <Line data={data} options={options} />
+      </div>
     </div>
   );
 }
